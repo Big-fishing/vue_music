@@ -2,7 +2,7 @@
     <div v-if="commentbol" class="comment-content" :class="{'colorFff':$props.type === 'music'}">
         <ul class="conment-certer">
             <li v-for="itme in comment" :key='itme.commentId'>
-                <el-image :src="itme.user.avatarUrl"></el-image>
+                <el-image :src="itme.user.avatarUrl" lazy></el-image>
                 <div class="comment-text">
                     <p>
                         <span>{{itme.user.nickname}}：</span>

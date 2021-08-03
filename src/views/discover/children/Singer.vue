@@ -18,7 +18,7 @@
             <ul>
                 <li v-for="itme in artists" :key="itme.id">
                     <router-link :to='`/detailsPage/singer?id=${itme.id}`'>
-                        <el-image :src="itme.picUrl" :alt="itme.name">
+                        <el-image :src="itme.picUrl" :alt="itme.name" lazy>
                             <template #placeholder>
                                 <div class="image-slot">
                                     <i class="el-icon-picture-outline"></i>

@@ -5,7 +5,7 @@
             <ul>
                 <li v-for="itme in officialTop" :key='itme.id'>
                     <router-link :to='`/detailsPage/songSheet?id=${itme.id}`'>
-                        <img :src="itme.coverImgUrl" :alt="itme.name">
+                        <el-image :src="itme.coverImgUrl" :alt="itme.name" lazy></el-image>
                         <p>{{itme.name}}</p>
                     </router-link>
                 </li>
@@ -16,7 +16,7 @@
             <ul>
                 <li v-for="itme in globalTop" :key='itme.id'>
                     <router-link :to='`/detailsPage/songSheet?id=${itme.id}`'>
-                        <img :src="itme.coverImgUrl" :alt="itme.name">
+                        <el-image :src="itme.coverImgUrl" :alt="itme.name" lazy></el-image>
                         <p>{{itme.name}}</p>
                     </router-link>
                 </li>

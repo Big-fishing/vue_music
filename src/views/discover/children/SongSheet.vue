@@ -18,7 +18,7 @@
             <ul>
                 <li v-for="itme in playlist" :key='itme.id+(Math.random()*100)'>
                     <router-link :to='`/detailsPage/songSheet?id=${itme.id}`'>
-                        <img :src="itme.coverImgUrl" :alt="itme.name">
+                        <el-image :src="itme.coverImgUrl" :alt="itme.name" lazy></el-image>
                         <p>{{itme.name}}</p>
                     </router-link>
                 </li>

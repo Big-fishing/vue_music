@@ -2,7 +2,7 @@ module.exports = {
     devServer:{
         proxy:{
             '/api': {
-                target: 'https://www.codeman.store/',
+                target: 'http://localhost:3000/',
                 changeOrigin: true,
                 ws: true,
                 pathRewrite: {
